@@ -173,4 +173,4 @@ We are working on a number of different research tasks in super-resolution, we'l
 Short-term upgrades planned:
 - CI automated testing (alongside Pytest)
 - Release of packaged version
-- TBC
+- Other upgrades TBA
