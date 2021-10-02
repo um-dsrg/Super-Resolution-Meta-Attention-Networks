@@ -1,0 +1,12 @@
+celeba/*
+div2k/*
+flickr2k/*
+SR_Training_Datasets/*
+SR_Testing_Datasets/*
+temp_images/*
+temp_faces/*
+SRCNN_tst_outputs/*
+helen/*
+afad/*
+celeba-hq/*
+!celeba-hq/data_splits/
