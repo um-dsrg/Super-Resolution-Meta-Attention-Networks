@@ -210,7 +210,7 @@ class TrainingHandler:
                 if index == 0 and self.save_samples:
                     samples_folder = os.path.join(self.model.logs, 'epoch_%d_samples' % epoch_idx)
                     create_dir_if_empty(samples_folder)
-                    im_names = [name.replace('/', '_') for name in im_names]
+                    im_names = [name.replace(os.sep, '_') for name in im_names]
                     safe_image_save(rgb_out, samples_folder, im_names, config='rgb')
 
                 # displays diagnostics

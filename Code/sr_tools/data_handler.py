@@ -461,10 +461,13 @@ class SuperResImages(Dataset):
             else:
                 metadata = np.array(0)  # TODO: unreduced_kernel should be read from metadata, and not from a separate variable.
 
-            kernel_loc = [m == 'unmodified_blur_kernel' for m in self.metadata_keys]
-            unreduced_kernel = list(compress(self.metadata[index], kernel_loc))
-            kernel_len = int(np.sqrt(len(unreduced_kernel)))
-            unreduced_kernel = np.array(unreduced_kernel).reshape(kernel_len, kernel_len)
+            if self.metadata is not None and 'unmodified_blur_kernel' in self.metadata_keys:
+                kernel_loc = [m == 'unmodified_blur_kernel' for m in self.metadata_keys]
+                unreduced_kernel = list(compress(self.metadata[index], kernel_loc))
+                kernel_len = int(np.sqrt(len(unreduced_kernel)))
+                unreduced_kernel = np.array(unreduced_kernel).reshape(kernel_len, kernel_len)
+            else:
+                unreduced_kernel = np.array(0)
         # HR processing
         if self.hr_base is not None:
             if self.lr_type == 'interp':
