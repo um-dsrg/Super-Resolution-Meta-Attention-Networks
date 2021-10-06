@@ -39,7 +39,7 @@ All functionality has been tested on Linux (CPU & GPU), Mac OS (CPU) and Windows
 
 Requirements installation is only meant as a guide and all requirements can be installed using alternative means (e.g. using ```pip```).
 
-Guidelines for Generating SR Data
+Guidelines for Generating SR Data  <a name="data-generate"></a>
 -----------------
 ### Setting up CelebA Dataset
 Create a folder 'celeba' in the Data directory.  In here, download all files from the celeba [source](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).  
@@ -103,7 +103,32 @@ Similarly, for evaluation, prepare an eval config file (details in Documentation
 7. Various SFTMD variants (check SFTMD architectures file for options)
 
 ### IEEE SPL Pre-Trained Model Weights
-Sharing method TBC.
+All weights for the models presented in our paper are available for download [here](https://doi.org/10.5281/zenodo.5551061).  The models are split into three folders:
+
+- Models trained on **blurry general images**:  These models were all trained on DIV2K/Flickr2K blurred/downsampled images.  These include:
+  - SRMD
+  - SFTMD
+  - RCAN
+  - EDSR
+  - SAN
+  - HAN
+  - Meta-RCAN
+  - Meta-EDSR
+  - Meta-SAN
+  - Meta-HAN
+- Models trained on **blurry and compressed general images**:  These models were all trained on DIV2K/Flickr2K blurred/downsampled/compressed images.  These include:
+  - RCAN
+  - Meta-RCAN (accepting blur kernel data only)
+  - Meta-RCAN (accepting compression QPI data only)
+  - Meta-RCAN (accepting both blur kernels and compression QPI)
+- Models trained on **blurry face images**:  These models were all trained on CelebA-HQ blurred/downsampled images.  These include:
+  - RCAN
+  - SPARNet (note that SPARNET only accepts pre-upsampled images)
+  - Meta-RCAN
+  - Meta-SPARNet
+-  Testing config files for all of these models are available in Documentation/SPL_testing_files.  To use these, you need to first download and prepare the relevant datasets as shown [here](#data-generate).  Place the downloaded model folders in ./Results to use the config files as is, or adjust the ```model_loc``` parameter to point towards the directory containing the models.
+
+Once downloaded, these models can be used directly with the eval command (```eval_sisr``) on any other input dataset as discussed in the evaluation documentation (Documentation/model_eval.md).
 
 ### Replicating SPL Results from Scratch
 

@@ -1,0 +1,12 @@
+metrics = ['PSNR', 'SSIM']  # metrics to calculate on validation set
+model_and_epoch = [['srmd_blurred_images', 'best'], ['rcan_blurred_images', '1135'], ['q-rcan_blurred_images', 'best'], ['edsr_blurred_images', 'best'], ['q-edsr_blurred_images', 'best'], ['han_blurred_images', 'best'], ['san_blurred_images', 'best'], ['q-han_blurred_images', 'best'], ['q-san_blurred_images', 'best'], ['sftmd_blurred_images', '1150']]
+results_name = 'set14_blurry_image_test'
+gpu = true
+save_im = false
+scale = 4
+model_loc = './Results/models_blurry_images/'
+lr_dir = './Data/Set14/lr_blurred'
+hr_dir = './Data/Set14/hr'
+full_directory = true
+batch_size = 1
+out_loc = '.'

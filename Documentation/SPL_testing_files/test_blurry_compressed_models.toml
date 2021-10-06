@@ -1,0 +1,12 @@
+metrics = ['PSNR', 'SSIM']  # metrics to calculate on validation set
+model_and_epoch = [['rcan_compressed', 'best'], ['q-rcan_compresed_q', '1136'], ['q-rcan_compresed_k', '1116'], ['q-rcan_compresed_q_k', 'best']]
+results_name = 'set14_blurry_compressed_image_test'
+gpu = true
+save_im = false
+scale = 4
+model_loc = './Results/models_blurry_compressed_images/'
+lr_dir = './Data/Set14/lr_blurred_compressed'
+hr_dir = './Data/Set14/hr'
+full_directory = true
+batch_size = 1
+out_loc = '.'

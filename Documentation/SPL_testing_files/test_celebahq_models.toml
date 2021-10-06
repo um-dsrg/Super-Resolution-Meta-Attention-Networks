@@ -1,0 +1,13 @@
+metrics = ['PSNR', 'SSIM']  # metrics to calculate on validation set
+model_and_epoch = [['rcan_celeba_hq', '49'],['q-rcan_celeba_hq_blur_kernels','best'], ['sparnet_celeba_hq', 'best'], ['qsparnet_celeba_hq', 'best']]
+results_name = 'celebahq_model_comparison'
+gpu = true
+save_im = false
+scale = 4
+model_loc = './Results/models_celeba_hq/'
+lr_dir = './Data/celeba-hq/lr_blurred'
+hr_dir = './Data/celeba-hq/hr_superres'
+batch_size = 1
+out_loc = '.'
+num_image_save = 100
+image_shortlist = './Data/celeba-hq/data_splits/celeba_hq_test_splits.csv'
