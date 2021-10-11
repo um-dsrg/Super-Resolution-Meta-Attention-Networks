@@ -179,7 +179,7 @@ class EvalHub:
 
         # send results for saving or visualization
         interpret_sisr_images(output_package, metric_slice, metrics, self.comparisons_dir,
-                              names=['image_comparison_%s.pdf' % probe_name.replace('/', '_') for probe_name in probe_names],
+                              names=['image_comparison_%s.pdf' % probe_name.replace(os.path.sep, '_') for probe_name in probe_names],
                               direct_view=False, config='rgb',
                               extra_info={model.experiment: [['epoch', model.model_epoch]]
                                           for model in self.model_bundles})
