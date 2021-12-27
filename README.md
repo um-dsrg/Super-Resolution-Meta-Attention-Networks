@@ -174,17 +174,16 @@ from any directory, with the relevant virtual environment activated.
 
 Citation
 -----------------
-**Paper currently still in early-access, will update once fully published.**
 ```
 @ARTICLE{Meta-Attention,
-author={Aquilina, Matthew and Galea, Christian and Abela, John and Camilleri, Kenneth P. and Farrugia, Reuben},
-journal={IEEE Signal Processing Letters},
-title={Improving Super-Resolution Performance using Meta-Attention Layers},
-year={2021},
-volume={},
-number={},
-pages={1-1},
-doi={10.1109/LSP.2021.3116518}}
+  author={Aquilina, Matthew and Galea, Christian and Abela, John and Camilleri, Kenneth P. and Farrugia, Reuben A.},
+  journal={IEEE Signal Processing Letters}, 
+  title={Improving Super-Resolution Performance Using Meta-Attention Layers}, 
+  year={2021},
+  volume={28},
+  number={},
+  pages={2082-2086},
+  doi={10.1109/LSP.2021.3116518}}
 ```
 
 License/Further Development
