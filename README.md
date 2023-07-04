@@ -1,4 +1,5 @@
-# Deep-FIR Codebase - Super Resolution Meta Attention Networks [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg) [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg) [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Deep-FIR Codebase - Super Resolution Meta Attention Networks 
+[![Platform Support](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-blue)](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-blue) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ** UPDATE ** - A newer version of this framework with more models and functionality is now available here: https://github.com/um-dsrg/RUMpy
 -----------------
